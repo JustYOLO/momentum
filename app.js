@@ -16,3 +16,17 @@ if(isNaN(age) || age < 0) {
 else {
     console.log("You should exercise");
 }
+
+const player = {
+    printName: function(playerName) {
+        console.log("Greetings, " + playerName)
+    },
+}
+
+player.printName("lee")
+
+function sayHello(playerName) {
+    console.log("Hello, " + playerName)
+}
+
+sayHello("lee")
