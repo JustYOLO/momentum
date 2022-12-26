@@ -1,32 +1,32 @@
-const age = parseInt(prompt("How old are you"));
+const h1 = document.querySelector(".hello h1");
 
-if(isNaN(age) || age < 0) {
-    console.log("Please write a real number");
-} else if(age < 18) {
-    console.log("You can't buy alcohol");
-} else if(age >= 18 && age <= 50) {
-    console.log("You can drink alcohol");
-} else if(age === 100) {
-    console.log("wow you're wise");
-} else if(age > 80) {
-    console.log("You can do whatever you want");
+function handleTitleClick() {
+    h1.style.color = "blue";
+}
+function handleMouseEnter() {
+    h1.innerText = "Mouse is here!"
+}
+function handleMouseLeave() {
+    h1.innerText = "Mouse is gone!";
+}
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+function handleWindowCopy() {
+    alert("copier!");
+}
+function handleWindowOffline() {
+    alert("SOS NO WIFI!!!!!");
+}
+function handleWindowOnline() {
+    alert("Back to Online!")
 }
 
+h1.addEventListener("click", handleTitleClick);
+h1.addEventListener("mouseenter", handleMouseEnter);
+h1.addEventListener("mouseleave", handleMouseLeave);
 
-else {
-    console.log("You should exercise");
-}
-
-const player = {
-    printName: function(playerName) {
-        console.log("Greetings, " + playerName)
-    },
-}
-
-player.printName("lee")
-
-function sayHello(playerName) {
-    console.log("Hello, " + playerName)
-}
-
-sayHello("lee")
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);

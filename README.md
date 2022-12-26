@@ -1,12 +1,16 @@
-# momentum
+# Momentum
 Javascript Practice (nomadcoders.co)
 
-<h2>Day 1</h2> 
+***
+***
+<br>
+
+# Day 1
 
 > Use const and let only. DO NOT USE VAR <br> 
-Use "add: function(attributes) {}" if you define inside from object. 
-<br>EX)
+Use `"add: function(attributes) {}"` if you define inside from object. 
 
+**Example)**
 ```javascript
 
 const player = {
@@ -18,11 +22,14 @@ const player = {
 player.printName("lee")
 ```
 
-<h2>Day 2</h2>
+<br><br><br>
 
->use "===" instead of "==". <br>
-"===" compares value and type of an object, but "==" only compares the value of an object. <br>
-EX)
+# Day 2
+
+> Use `"==="` instead of `"=="`. <br>
+`"==="` compares value and type of an object, but `"=="` only compares the value of an object. <br>
+
+**Example)**
 
 ```javascript
 console.log(1 === 1);  // Output: true
@@ -32,4 +39,30 @@ console.log(1 == 1);  // Output: true
 console.log('1' == 1);  // Output: true
 ```
 
-> And operators are same from Clang (&&, ||)
+> Other operators are same from Clang (&&, ||)
+
+***
+
+**Warning!**
+
+```javascript
+title.addEventListener("click", handleTitleClick());
+```
+
+> This code will immediately call the function `"handleTitleClick()"` because of the parentheses. <br>
+If you want to pass a function as an argument to the `"addEventListener()"` you should not add the parentheses.
+
+**Example)**
+
+```javascript
+title.addEventListener("click", handleTitleClick);
+```
+***
+
+
+
+***
+
+> In VSC, use `"Command + Shift + L"` to select same text what I'm selecting.
+
+<br><br><br>
