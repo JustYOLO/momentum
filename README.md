@@ -7,7 +7,7 @@ Javascript Practice (nomadcoders.co)
 
 # Day 1
 
-> Use const and let only. DO NOT USE VAR <br> 
+Use const and let only. DO NOT USE VAR <br> 
 Use `"add: function(attributes) {}"` if you define inside from object. 
 
 **Example)**
@@ -26,7 +26,7 @@ player.printName("lee")
 
 # Day 2
 
-> Use `"==="` instead of `"=="`. <br>
+Use `"==="` instead of `"=="`. <br>
 `"==="` compares value and type of an object, but `"=="` only compares the value of an object. <br>
 
 **Example)**
@@ -39,7 +39,7 @@ console.log(1 == 1);  // Output: true
 console.log('1' == 1);  // Output: true
 ```
 
-> Other operators are same from Clang (&&, ||)
+Other operators are same from Clang (&&, ||)
 
 ***
 
@@ -49,7 +49,7 @@ console.log('1' == 1);  // Output: true
 title.addEventListener("click", handleTitleClick());
 ```
 
-> This code will immediately call the function `"handleTitleClick()"` because of the parentheses. <br>
+This code will immediately call the function `"handleTitleClick()"` because of the parentheses. <br>
 If you want to pass a function as an argument to the `"addEventListener()"` you should not add the parentheses.
 
 **Example)**
@@ -59,10 +59,16 @@ title.addEventListener("click", handleTitleClick);
 ```
 ***
 
-
-
-***
-
-> In VSC, use `"Command + Shift + L"` to select same text what I'm selecting.
+In VSC, use `"Command + Shift + L"` to select same text what I'm selecting.
 
 <br><br><br>
+
+# Day 3
+
+Start making my own webpage. <br> Need to change:
+1. Set background (auto-resizing)
+1. login page
+1. save user name 
+1. login
+
+**ISSUE <br> <ol> How to resize background?**
