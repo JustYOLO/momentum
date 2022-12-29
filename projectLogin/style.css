@@ -10,8 +10,31 @@ html {
 /* this works but if window's width got bigger than pic's original size, the leftover space will shown as empty(white) */
 
 #title {
-    display: inline;
+    display: block;
+    
+    width: 18%;
+    margin: auto;
+    background: rgba(146, 146, 146, 0.57);
+
     text-align: center;
     text-decoration: none;
     color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#loginBox {
+    display: block;
+
+    width: 30%;
+    margin: auto;
+    margin-top: 30%;
+    background: rgba(146, 146, 146, 0.57);
+}
+
+#form {
+    margin-left: 10%;
+}
+
+.center {
+    text-align: center;
 }
