@@ -71,4 +71,61 @@ Start making my own webpage. <br> Need to change:
 1. save user name 
 1. login
 
-**ISSUE <br> <ol> How to resize background?**
+**ISSUE <br> How to resize background?**
+
+<br><br><br>
+
+# Day 6
+
+If you want to use validation in html input, you need to use **<code>form</code>** at the parent tag. <br>
+**Example)**
+```html
+<form id="login-form"> <!-- use form -->
+    <input 
+    required 
+    maxlength="15" 
+    type="text" 
+    placeholder="What is your name?"
+    /> <!-- required needs form as a parent tag -->
+    <button>Log In</button>
+</form>
+```
+Despite using this, we cannot prevent user for summit a invaild value.
+
+***
+
+Javascirpt Formatting:
+```javascript
+const userName = "Lee";
+const greetings = `Hello ${userName}`;
+
+//greetings = "Hello Lee";
+```
+
+***
+
+localStorage => hold data even the user refreshes the webpage.<br>
+localStorage data is like python: have keys and values
+
+**how to control localStorage**
+
+```javascript
+localStorage.setItem("key", "value"); // save item in localStorage
+localStorage.getItem("key"); // get item from localStorage
+localStorage.removeItem("key"); // remove item from localStorage 
+
+```
+
+***
+
+== & === difference in comparing null:
+```javascript
+const nullVar = null;
+const undefinedVar = undefined;
+
+console.log(nullVar == undefinedVar) // this will be true
+console.log(nullVar === undefinedVar) // this will be false
+```
+
+**So, be carful when using == and === in javascript.**
+
