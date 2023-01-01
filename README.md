@@ -129,3 +129,35 @@ console.log(nullVar === undefinedVar) // this will be false
 
 **So, be carful when using == and === in javascript.**
 
+<br><br><br>
+
+
+# Day 7
+
+**<code>setInterval(function, time)</code>** <br>
+The fucntion run at intervals of given time (attribute "time", in ms) <br><br>
+
+**<code>setTimeout(function, time)</code>** <br>
+The function run after given time passes (attribute "time, in ms) <br>
+
+***
+
+You can get time information with Date.
+```javascript
+const date = new Date();
+const clock = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`; // HH:MM:SS time in string
+```
+However you cannot get "01" because date.getSomething return "1" instead of "01" <br>
+
+In this case, you can use **<code>String.padStart();</code>** to formatting the string. <br>
+**Example)**
+```javascript
+const date = new Date();
+const hours = String(date.getHours()).padStart(2, "0");
+const minutes = String(date.getMinutes()).padStart(2, "0");
+const seconds = String(date.getSeconds()).padStart(2, "0");
+// padStart(num, String); num = standard length of string, String = if target string is shorter than num, add String to reach standard length.
+clock.innerText = `${hours}:${minutes}:${seconds}`; 
+// REAL HH:MM:SS 
+```
+You have **<code>String.padEnd();</code>** to add backwards
