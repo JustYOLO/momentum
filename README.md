@@ -161,3 +161,25 @@ clock.innerText = `${hours}:${minutes}:${seconds}`;
 // REAL HH:MM:SS 
 ```
 You have **<code>String.padEnd();</code>** to add backwards
+
+<br><br><br>
+
+# Day 8
+
+You can use Math module to use .random / .round / .ceil(ceiling) / .floor
+
+```javascript
+console.log(Math.random()); // 0.2390530681531431
+console.log(Math.floor(Math.random() * 10)) // returns random 0~9 integer
+```
+
+***
+
+To add a new element to html with JavaScript, use <code>createElement</code> and <code>document.body.appendChild</code> <br>
+```javascript
+const bgImage = document.createElement("img");
+bgImage.id = "background"; // you can add bgImage.(attribute) = "value"; to add attribute in created element.
+bgImage.src = `img/${chosenImage}`; // like this
+document.body.appendChild(bgImage); // append to last part of <body> at html
+```
+**Alert:** you HAVE TO apeend to html while <code>createElement</code> does not append element to html.
