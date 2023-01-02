@@ -16,8 +16,6 @@ function winOutput(isWin) {
 function guessInputHandler(event) {
     event.preventDefault();
 
-    win.classList.add("hidden");
-
     const guessNum = parseInt(guessInput.value);
     const rangeNum = parseInt(rangeInput.value);
     const randomNum = Math.floor(Math.random() * (rangeNum + 1));
