@@ -1,3 +1,6 @@
 .hidden {
     display: none;
 }
+#result {
+    margin-top: 0px;
+}

@@ -183,3 +183,16 @@ bgImage.src = `img/${chosenImage}`; // like this
 document.body.appendChild(bgImage); // append to last part of <body> at html
 ```
 **Alert:** you HAVE TO apeend to html while <code>createElement</code> does not append element to html.
+
+***
+
+Javascript can use <code>booleanValue ? "true" : "false"</code><br>
+**Example)**
+```javascript
+result.innerHTML = `You chose: ${guessNum}, the machine chose: ${randomNum}. <br> ${isWin ? "<strong>You Win!</strong>" : "<strong>You Lose!</strong>"}`;
+```
+PS) You can use .innerHTML to use html tags (But not recommanded because of security reasons)
+
+***
+
+You can use <code>isNan(variable)</code> to find out variable is NaN or not
