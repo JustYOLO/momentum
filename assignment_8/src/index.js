@@ -15,7 +15,7 @@ function guessInputHandler(event) {
     const randomNum = Math.floor(Math.random() * (rangeNum + 1)); // get random number, range of 0~rangeNum 
     const isWin = (guessNum === randomNum); // is user win or not
     
-    if (rangeNum === null || rangeNum === undefined || rangeNum.isNan || rangeNum === "" || isNaN(rangeNum))  // handle wrong input
+    if (rangeNum === null || rangeNum === undefined || rangeNum === "" || isNaN(rangeNum))  // handle wrong input
     {
         result.innerText = "Error! Range is not set";
     } else if (rangeNum < 0) { // handle negative range
