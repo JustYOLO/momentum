@@ -1,0 +1,172 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    /* Align elements horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-background {
+    /* Add a background color to the text */
+    background-color: rgba(238, 238, 238, 0.687);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+h1 {
+    position: block;
+    margin-top: 15%;
+    font-size: 700%;
+}
+h2 {
+    font-size: 200%;
+}
+ul {
+    /* Set the width and center the text */
+    width: 50%;
+    text-align: center;
+    list-style: none;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+input[type="text"],
+input[type="submit"],
+button {
+    /* Add some padding and a border */
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+
+    /* Add some font styles */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+
+    /* Add some hover effects */
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="submit"]:focus,
+button:focus {
+    /* Add a highlight effect on focus */
+    border-color: #333;
+    box-shadow: 0 0 10px #333;
+}
+input[type="submit"],
+button {
+    /* Add some background styles */
+    background-color: #eee;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    /* Change the background color on hover */
+    background-color: #ddd;
+}
+
+button {
+    /* Add some extra styles for buttons */
+    width: 20%;
+}
+
+button.primary {
+    /* Add a primary button style */
+    background-color: blue;
+    color: white;
+}
+
+button.primary:hover {
+    /* Change the background color on hover */
+    background-color: #0070c9;
+}
+
+form {
+    /* Align elements horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+input[type="text"] {
+    /* Set the width and add some padding */
+    width: 80%;
+    margin-right: 10px;
+}
+
+button::before {
+    /* Add some font styles */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+button.primary::before {
+
+    /* Add some font styles */
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+button {
+    /* Remove the padding and border */
+    padding: 0;
+    border: 0;
+
+    /* Remove the background color */
+    background-color: transparent;
+}
+
+button.primary {
+    /* Remove the padding and border */
+    padding: 0;
+    border: 0;
+
+    /* Remove the background color */
+    background-color: transparent;
+}
+.list-background li {
+    /* Automatically adjust the background size to the length of the text */
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: fit-content;
+}
+#login-form{
+    margin-bottom: 10px;
+}
+#todo-form {
+    width: 20%;
+    margin-bottom: 1%;
+}
+#quote {
+    margin-top: 10px;
+}
+#author {
+    display: flex;
+    justify-content: center;
+}
+#weather {
+    position: absolute;
+    top: 0%;
+    left: 90%;
+}
